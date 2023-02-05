@@ -1,13 +1,10 @@
 import tkinter as tk
-from typing import Any
-
 import pandas as pd
-from pandas import DataFrame
 
 data = pd.read_csv("./data/ro_en_1-1999.csv")
 
 BACKGROUND_COLOR = "#B1DDC6"
-piece: DataFrame | Any = data.sample()
+piece = data.sample()
 
 root = tk.Tk()
 root.title("Flash Cards")
